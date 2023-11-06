@@ -1,4 +1,5 @@
 var prompt = require('prompt-sync')
+//não se esqueça de dar o NPM nas bibiliotecas
 
 //boolean 
 //number
