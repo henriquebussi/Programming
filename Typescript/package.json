@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx ts-node main.ts",
+    "start": "npx ts-node GrimórioScript.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
