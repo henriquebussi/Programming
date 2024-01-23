@@ -131,7 +131,33 @@
     #sexoimg{
         position: absolute;
         /* position = define qual vai ser a posição inicial do elemento
-        position: absolute = coloca o elemento na cordenada (0,0), para mudar posição, usa-se right, left, top, e bottom (direita, esquerda, cima e baixo respectivamente) */
+        position: absolute = coloca o elemento na cordenada (0,0), para mudar posição, usa-se right, left, top, e bottom (direita, esquerda, cima e baixo respectivamente) 
+        
+        /* <plate> - colocar o elemento(plate); seleciona todos os elementos(plate) */
+        /* <plate id="fancy"> - junto de '#' coloque o id(#fancy); seleciona todos os id */
+
+        /* <plate>
+            <apple /> - coloca os elementos em sequencia(plate apple) para saber os que estão dentro do primeiro elemento(apple)*/
+        /* plate id="fancy">
+            <pickle /> - pega o elemento dentro de um id(#fancy pickle)*/
+        
+        /* <apple class="small"> - pega todos os elementos que tem a classe(small) */
+        /* <orange class="small"> - pega todos os elementos(orange) e a classe(small), com uma sintaxe assim (orange.small) */
+
+        /* <plate>
+            <pickle />
+                </plate>
+            <bento>
+                <pickle />
+            </bento> - para pegar dois elementos, pode-se usar ",", a sintaxe ficaria assim (plate, bento)*/
+        /* '*' - para selecionar todos os elementos */
+        /* '* x' - seleciona todos os elementos dentro de x */
+
+        /* x + y - pega o proximo "y" depois de "x" */
+        /* x ~ y - seleciona todos os "y" depois de "x" */
+        /* x > y - seleciona todos "filhos diretos" "y" que são "filhos" de "x"  */
+
+        
     }
 </style>
 <body>

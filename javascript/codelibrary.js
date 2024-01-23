@@ -1,6 +1,10 @@
 // Para iniciar um arquivo .js é nescessario o NodeJS Instalado
 
+// Abra apenas a pasta "javascript" e use o terminal do powershell
+
 // para iniciar esse arquivo, escreva no terminal "node codelibrary.js"
+
+// ou vá em "run" e "start debugging" e Nodejs
 
 console.log("Exemplo \n") // console.log()
 
