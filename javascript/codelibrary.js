@@ -8,10 +8,11 @@
 
 console.log("Exemplo \n") // console.log()
 
-
 // Tipos de Variaveis
 
 // var
+
+var espaco = '/----\----\-------/'
 
 var henrique = 'henrique' //declara uma variavel
 var bussi = 'bussi' 
@@ -43,6 +44,7 @@ console.log(henrique, bussi, santos);
 console.log(tupa);
 
 
+console.log(espaco);
 
 // Tipos de Data (Data Types) são os tipos de data que uma variavel
 
@@ -64,6 +66,7 @@ console.log(typeof buletvalen); // Quando não tem nada
 console.log(typeof slitnot); // Quando tem MUITO Numero
 console.log(typeof rastein); // Quando... sla, parece função ou algo do tipo
 
+console.log(espaco);
 
 
 // Operadores Matemáticos
@@ -73,6 +76,7 @@ console.log("Subtração", 10 - 2); // Subtração
 console.log("multiplicação", 10 * 2); // Multiplicação
 console.log("a divisão é: ", 10 / 2 ); // Divisão
 
+console.log(espaco);
 
 //Template strings
 
@@ -82,6 +86,7 @@ crase);
 console.log(`Meu nome é 
 ${crase}`) // Utilizando Crase, você pode alterar a formatação do texto, alem de que com ${}, consegue operar comandos de melhor forma
 
+console.log(espaco);
 
 
 // Array / Listas
@@ -93,10 +98,24 @@ console.log(japa.length); // .length diz quantos itens tem na Array
 console.log(japa[2]); // Colocando [] depois da Array, conseguimos ver um item epecifico na Array
 console.log(japa.push("corno")) // .push coloca um item no final de uma lista
 console.log(japa.pop); // .pop remove o ultimo item de uma array
+console.log(japa.reverse);
+console.log(japa.splice);
 
+console.log(espaco);
 
 
 // for
 for (let i of japa){ // of
     console.log(i);
 }
+
+
+
+//function
+function  portão(gate) {
+    for (let i = 0; i<5; i++)
+    console.log(gate);
+}
+
+portão ("Shadowheart best waifu")
+
