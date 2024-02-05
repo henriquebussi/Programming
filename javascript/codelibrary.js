@@ -97,8 +97,10 @@ console.log(japa);
 console.log(japa.length); // .length diz quantos itens tem na Array
 console.log(japa[2]); // Colocando [] depois da Array, conseguimos ver um item epecifico na Array
 console.log(japa.push("corno")) // .push coloca um item no final de uma lista
+
+aluno.pop
 console.log(japa.pop); // .pop remove o ultimo item de uma array
-console.log(japa.reverse);
+console.log(japa.reverse); //
 console.log(japa.splice);
 
 console.log(espaco);

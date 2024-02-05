@@ -1,3 +1,5 @@
+<!-- HTML significa HyperText Markup Language e é usado para criar a estrutura e o conteúdo de uma página da web-->
+
 <!-- ! = faz o cabeçalho -->
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livro de Marcação</title>
     <link rel="stylesheet" href="">
-    <!-- Link = dentro do href voce pode colocar seu css -->
+    <!-- Link = dentro do href voce pode colocar seu css e javascript-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
@@ -180,11 +182,17 @@
     <!-- hr = faz linhazinha braba -->
     <div class="sexoimg">
         <img src="imagem.jpg" alt="braba">
+        <!-- img = colocar imagem (obs: colocar imagem na pasta) -->
+        <video src="https://www.youtube.com/watch?v=UDPbUClhNg0" width="320" height="240" controls>
+            </video> 
+            <!---->
     </div>
-    <p>descobri como colocar imagens brabas</p>
-    <!-- img = colocar imagem (obs: colocar imagem na pasta) -->
+    
+    <p style="color: aqua;">descobri como colocar imagens brabas</p>
+    <!-- da para colocar style no html, mesmo que não seja recomendavel -->
     <a href="https://www.youtube.com/watch?v=UDPbUClhNg0">Descobri como coloca link porra</a>
     <!-- a = redirecionar para link -->
+    
     <p id="sexo1">descobri como ter variavéis</p>
     <!-- id = variavel; pra revisitar no css tem que usar # -->
     <span id="sexoemgrupo">
@@ -220,11 +228,11 @@
     <label for="Agora me diga de verdade oque quer..."></label>
     <input type="password" placeholder="" id=""> <br>
     <label for="">Escreva uma redação agr ent otario </label> <br>
-    <textarea name="" id="" cols="30" rows="10"></textarea> <br>
-    <!-- textarea = faz uma caixa de texto -->
+    <textarea name="" id="" cols="30" rows="10"></textarea> <br>     <!-- textarea = faz uma caixa de texto -->
 
-    <div id="sexo2">Azul</div>
-    <div id="sexo3">Dourado</div>
+
+    <div id="sexo2"><em>Azul</em></div> <!-- em = faz o texto ficar em Italico -->
+    <div id="sexo3"><strong>Amarelo</strong></div> <!--strong = faz o texto ficar em negrito-->
     <div id="sexo4">Verde</div>
 
     <div class="sexo5">Broxa</div>
