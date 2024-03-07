@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.3"
   }
 }

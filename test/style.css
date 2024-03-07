@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sapo{
+    width: 0;
+}
+
+body{
+    background-color:rgb(0, 188, 188);
+}
+
+@media (max-width: 600px){
+    h1{
+        font-weight: bolder
+    }
+
+    div{
+        display: flex;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    #sapo{
+        width: 10rem;
+    }
+    .alok{
+        display: flex;
+        justify-content: center;
+    }
+    .sapo{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.hora{
+    display: flex;
+    justify-content: end;
+
+    gap: 20px
+}
+
+#lithora{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+
+}

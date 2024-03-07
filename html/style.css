@@ -1,0 +1,155 @@
+    /* style é basicamente css, mas só que no mesmo arquivo do html, é recomendavel criar um css próprio, mas n quero fzr mais um css ent fds */
+
+
+    /* BASICO */
+
+
+    body{ /* ELEMENTO{} - Vai afetar TODOS daquele elemento */
+        background-color: thistle;
+        /* background-color = muda a cor do plano de fundo geral */
+
+    }   
+
+    header{
+        font-size: 100px;
+    }
+    #sexo1{/* #ELEMENTO{} - Chama um ID de mesmo nome */
+        text-align: center;  /* text-align = alinhar o texto */
+        font-size: 100px;  /* font-size = modifica o tamanho da fonte */
+        color: rgb(29, 216, 0); /* color = coloca cor, bruh */
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  /* font-family = troca o estilo da fonte */
+        background-color: aliceblue; /* background-color = muda a cor do background da frase */
+                }
+
+    #sexoemgrupo{
+        color: aqua;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;  /* font-weight = modifica o quão grande/"gorda" é a fonte */
+    }
+
+    .sexo2{
+        color: rgb(255, 207, 198);
+        font-size: 10px;
+        text-align:center;
+        background-color: salmon;
+        width: 1000px;
+        /* width = regula a "largura" */
+        height: 100px;
+        /* height = regula a "altura" / o quanto de espaço é utilizado */
+}
+    #sexo2{
+        background-color: blue;
+        color: black;
+        width: 50%;
+        height: 100px;
+        display: inline-block;
+        /* display = diz qual tipo de "exibição" o elemento vai ter (nesse exemplo, o elemento em display conseguem estar na mesma linha que o elemento anterior) */
+        text-align: center;
+}
+
+    #sexo3{
+        background-color: gold;
+        color: white;
+        width: 50%;
+        height: 100px;
+        float: left;
+        /* float = determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr - Mozilla  */
+        text-align: center;
+    }
+
+    #sexo4{
+        background-color: rgb(32, 213, 0);
+        color: gold;
+        padding: 100px;
+        /* padding:  = determina o tamanho do elemento em questão, tem varias variações como o "padding-left" e "padding-botton", que determina o aumento de certas "direções" do elemento, como o lado esquerdo ou embaixo, respectivamente */
+        text-align: center;
+        border: 10px;
+        border-color: gold;
+    }
+
+    #sexo5{
+        border: solid gold 1px;
+        /* border = faz uma borda no elemento em questão, primeiro é o tipo da borda, depois a cor, e no final o tamanho */
+        border-radius: 10px;
+        /* border-radius = diz o quão arrendondado sera a borda */
+        -webkit-box-shadow: -2px 17px 11px -9px rgba(120,0,120,1);
+        -moz-box-shadow: -2px 17px 11px -9px rgba(120,0,120,1);
+        box-shadow: -2px 17px 11px -9px rgba(120,0,120,1);
+        /* sombra = coloca sombra (utilizei o site: https://www.cssmatic.com/box-shadow para fazer sombras customizadas) */
+    }
+
+    
+
+    .sexo_block {
+        display: block;
+        /* display: block - o display padrão, paradão e fixo*/
+        background-color: yellow;
+        text-align: center;
+        height: 30vh;
+    }
+
+    .sexo_flex {
+        /* display: flex - o display "flex" é variavel, pode colocar outro elemento na mesma linha */
+        display: flex;
+        background-color: red;
+        height: 30vh;
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sexodecoluna{
+        background-color: red;
+    }
+    #sexodecoluna1{
+        background-color: green;
+    }
+    #sexodecoluna2{
+        background-color: blue;
+    }
+
+    #sexoimg{
+        position: absolute;
+        /* position = define qual vai ser a posição inicial do elemento
+        position: absolute = coloca o elemento na cordenada (0,0), para mudar posição, usa-se right, left, top, e bottom (direita, esquerda, cima e baixo respectivamente) 
+        
+        /* <plate> - colocar o elemento(plate); seleciona todos os elementos(plate) */
+        /* <plate id="fancy"> - junto de '#' coloque o id(#fancy); seleciona todos os id */
+
+        /* <plate>
+            <apple /> - coloca os elementos em sequencia(plate apple) para saber os que estão dentro do primeiro elemento(apple)*/
+        /* plate id="fancy">
+            <pickle /> - pega o elemento dentro de um id(#fancy pickle)*/
+        
+        /* <apple class="small"> - pega todos os elementos que tem a classe(small) */
+        /* <orange class="small"> - pega todos os elementos(orange) e a classe(small), com uma sintaxe assim (orange.small) */
+
+        /* <plate>
+            <pickle />
+                </plate>
+            <bento>
+                <pickle />
+            </bento> - para pegar dois elementos, pode-se usar ",", a sintaxe ficaria assim (plate, bento)*/
+        /* '*' - para selecionar todos os elementos */
+        /* '* x' - seleciona todos os elementos dentro de x */
+
+        /* x + y - pega o proximo "y" depois de "x" */
+        /* x ~ y - seleciona todos os "y" depois de "x" */
+        /* x > y - seleciona todos "filhos diretos" "y" que são "filhos" de "x"  */
+
+        
+    }
+
+
+    /* TERMINA BASICO */
+
+    #flex1{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #flex2{
+        display: flex;
+        justify-content: space-around;
+    }

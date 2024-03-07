@@ -1,4 +1,5 @@
-var prompt = require('prompt-sync')
+import prompt from 'prompt-sync';
+const input = prompt();
 //não se esqueça de dar o NPM nas bibiliotecas
 
 //boolean 
@@ -28,12 +29,13 @@ console.log(espaco);
 // != Diferente
 // !== Diferente | Considera o Tipo de Dado
 
-console.log(10 === "10");
-console.log(10 == "10");
-console.log(10 != "10");
-console.log(10 !== "10");
-console.log("JOAO" !== "joao");
-console.log(50 > 20);
+
+// console.log(10 === "10");
+// console.log(10 == "10");
+// console.log(10 != "10");
+// console.log(10 !== "10");
+// console.log("JOAO" !== "joao");
+// console.log(50 > 20);
 
 console.log(espaco);
 
@@ -42,8 +44,8 @@ console.log(espaco);
 //|| ou
 //! não
 console.log("Operaradores Relacionais \n")
-console.log("joao" == "JOAO" && 20 > 10);
-console.log("joao" == "JOAO" || 20 > 10);
+// console.log("joao" == "JOAO" && 20 > 10);
+// console.log("joao" == "JOAO" || 20 > 10);
 console.log(!(20 > 10));
 console.log(20 > 10);
 console.log(!(20 < 10));
@@ -90,7 +92,7 @@ while (contador <= 20) {
 
 console.log(espaco)
 
-var listas = ["Joao", 23, true, [1,2,3], null];
+var listas = ["Joao", 23, true, ['1','2','3'], null];
 
 console.log(listas[0])
 console.log(listas[3])
@@ -110,11 +112,11 @@ for (var contador = 0; contador < listas.length; contador++) {
   console.log(listas[contador])
 }
 
-for(var i in listas) {
+for(let i in listas) {
   console.log(i) // IN: i é o indice (0,1, ..)
 }
 
-for(var i of listas) {
+for(let i of listas) {
   console.log(i) // OF: i é o item (a, b, ..)
 } 
 //push: tipo append do python, adiciona em lista
