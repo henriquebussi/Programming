@@ -1,0 +1,195 @@
+:root{
+    /* Variaveis do CSS, aqui colocando o "--" andtes, podemons colo */
+    --clr-cyan: #00F5C3;
+    --clr-pink: #E900F5;
+    --clr-gold: #F5BC00;
+    --clr-background: #75683B;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+/* Variaveis Pai/Estilo */
+
+body{
+    background-color: var(--clr-background);
+}
+.transition{
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+    color: var(--clr-pink);
+}
+
+#raffa{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    color: var(--clr-cyan);
+}
+
+.brocode{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--clr-gold);
+
+}
+
+.botaostyl{
+    font-size: 2rem;
+    border: 10px solid rgb(205, 17, 17);
+    background-color: rgb(169, 15, 15);
+    border-radius: 5px;
+    color: rgb(205, 17, 17);
+    font-weight: 700;
+    padding: 0.5rem 1em;
+    align-self: center;
+}
+
+.beer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-self: flex-end;
+}
+
+
+/* --------------------------------------------------- */
+
+/* Transições */
+.btn{
+    transition: all 0.3s;
+    /* transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s; */
+}
+
+/* Hover: quando mouse passa */
+.btn:hover{
+    transform: translateY(-10px);
+    background-color: red;
+    color: whitesmoke;
+}
+
+
+/* -------------------------------------------------------------- */
+/* Animações */
+
+
+/* "Shortcuts" de Animações */
+.animation {
+    display: flex;
+    justify-content: center;}
+
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;}
+
+.animate--delay{
+    animation-delay: 1s;}
+
+.animate--slow{
+    animation-duration: 3s;}
+
+.animate--fast{
+    animation-duration: 0.6s;}
+
+.animate--infinite{
+    animation-iteration-count: infinite;
+    animation-delay: 0s;}
+
+
+
+/* KeyFrames */
+@keyframes slideinleft{
+    from{
+        transform: translateX(-300px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+
+}
+
+@keyframes slideinRight {
+    from{
+        transform: translateX(300px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+@keyframes indoevoltando {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(300px);
+    }
+
+    70%{
+        transform: translateX(-300px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+/* Chamando as Animações com Variaveis */
+
+.SlideinLeft{
+
+    animation-name: slideinleft;
+    animation-timing-function: ease-in;
+
+    /* animation-name: slideinleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal ;
+    animation-fill-mode: forwards; */
+
+}
+
+
+
+.slideinright{
+    animation-name: slideinRight;
+    animation-timing-function: ease-in;
+}
+
+
+.rotate{
+    animation-name: rotate;
+    animation-timing-function: ease-in
+}
+
+
+
+.indoevoltando{
+    animation-name: indoevoltando;
+    animation-timing-function: ease-in 
+}
