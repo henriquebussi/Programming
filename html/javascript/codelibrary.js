@@ -81,6 +81,7 @@ console.log("a divisão é: ", 10 / 2); // Divisão
 console.log("A Potenciação é:", 10 ** 2); // Potenciação
 console.log("A Raiz é:", 10 % 2); // Raiz
 
+
 console.log(espaco);
 
 // Ordem Matematica
@@ -123,3 +124,7 @@ function portão(gate) {
 }
 
 portão("Shadowheart best waifu");
+
+console.log(1 == "1");
+console.log(1 === "1");
+

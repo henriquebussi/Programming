@@ -75,52 +75,15 @@ document.addEventListener("DOMContentLoaded", function() {
   text3.textContent = JSON.stringify(`${pessoa.likes} e ${pessoa.dislikes}`)
 });
 
-// fetch("chest.json")
-//   .then(response => response.json())
-//   .then(value => console.log(value))  
-//   .catch(error => console.error('Error fetching JSON:', error));
 
-
-let RandomBtn = document.getElementById("RandomBtn")
-let RandomNumber = document.getElementById("RandomNumber")
-let min = 10
-let max = 50
-
-RandomBtn.onclick = function(){
-  let randomnum = Math.floor(Math.random() * (max - min) + min)
-  RandomNumber.textContent = randomnum
+let button  = document.getElementById("button").onclick = function(){
+    let hello = document.getElementById("hone").value
+    document.getElementById("text").textContent = hello
 }
 
-let manyears = document.getElementById("manyears")
-let textyears = document.getElementById("textyears")
-let yearsubmit = document.getElementById("yearsubmit")
+fetch("bank.json")
+    .then(result => result.json())
+    .then(value => console.log(value))
+    .catch(error => console.error('Error fetching JSON:', error));
 
 
-yearsubmit.onclick = function(){
-  let ano1 = Number(manyears.value)
-  if (ano1 < 18){
-    textyears.textContent = "Não Autorizado"
-  } else if(ano1 > 60){
-    textyears.textContent = "...Porque?"
-  }
-  else{
-    textyears.textContent = "Autorizado"
-  }
-}
-
-
-let homosexual = document.getElementById("Homosexual")
-let gay = document.getElementById("gay")
-let dar = document.getElementById("Dar")
-let viado = document.getElementById("Viado")
-let none = document.getElementById("none")
-let who = document.getElementById("who")
-let resultado = document.getElementById("resultado")
-
-who.onclick = function(){
-  if(homosexual.checked || gay.checked || dar.checked || viado.checked){
-    resultado.textContent = "Voce gosta de Homens"
-  } else{
-    resultado.textContent = "Voce gosta de mulheres"
-  }
-}
