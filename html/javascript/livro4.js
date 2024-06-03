@@ -116,11 +116,136 @@ let viado = document.getElementById("Viado")
 let none = document.getElementById("none")
 let who = document.getElementById("who")
 let resultado = document.getElementById("resultado")
+let ternary = document.getElementById("ternary")
+let ternaryresult = document.getElementById("ternaryresult")
+let TarnaryBtn = document.getElementById("TarnaryBtn")
+let onetoten = document.getElementById("onetoten")
+let onetotenresult = document.getElementById("onetotenresult")
+let onetotenBtn = document.getElementById("onetotenBtn")
 
 who.onclick = function(){
   if(homosexual.checked || gay.checked || dar.checked || viado.checked){
     resultado.textContent = "Voce gosta de Homens"
-  } else{
+  } else if(none.checked){
     resultado.textContent = "Voce gosta de mulheres"
   }
+  else{
+    resultado.textContent = "invalido"
+  }
 }
+
+let diferente = 13
+
+// Escrita Ternary, basicamente um shortcut de um if e else
+
+TarnaryBtn.onclick = function(){
+  let tarnary = (ternary.checked) ? "tarnary" : "Tininidad"
+  ternaryresult.textContent = tarnary
+}
+
+// Switch, uma alternativa para muitos if's
+
+
+onetotenBtn.onclick = function(){
+  switch (onetoten.value){
+    case "1":
+      onetotenresult.textContent = "um";
+      break;
+    case "2":
+      onetotenresult.textContent = "dois";
+      break;
+    case "3":
+      onetotenresult.textContent = "tres";
+      break;
+    case "4":
+      onetotenresult.textContent = "quatro";
+      break;
+    case "5":
+      onetotenresult.textContent = "cinco";
+      break;
+    case "6":
+      onetotenresult.textContent = "seis";
+      break;
+    case "7":
+      onetotenresult.textContent = "sete";
+      break;
+    case "8":
+      onetotenresult.textContent = "oito";
+      break;
+    case "9":
+      onetotenresult.textContent = "nove";
+      break;
+    case "10":
+      onetotenresult.textContent = "dez";
+      break;
+    default:
+      onetotenresult.textContent = "digite novamente";
+  }
+}
+let typenumber = document.getElementById('typenumber')
+let typenumberBtn = document.getElementById("typenumberBtn")
+
+
+typenumberBtn.onclick = function(){
+  let temp = 0
+  let math = 1
+  console.log("funciona");
+  let Numberty = Number(typenumber.value)
+  for (let i = 0; i<Numberty; i++){ // for - faz um loop com alguns parametros, declarar, até onde vai, e se vai crescer
+    console.log("velhobroxa");
+    temp = temp + 1
+    math = math * temp
+    console.log("velhobroxa N°", temp);
+    console.log("voce é um merda", math, "x");
+  }
+}
+
+
+let array = [1, 2, 4 , 5, "aq"]
+let object = {"xadrez": 1, "checkers": 0, "forsale": 22, "deardiary": "hi"}
+
+
+// for in - percorre items em um objeto
+for (let i in array){
+    console.log(array[i]); 
+}
+for (let i in object){
+    console.log(i,":", object[i]);
+}
+console.log('let in');
+
+// for of -  percorre os valores de uma lista
+for (let i of array){ 
+    console.log(i)
+}
+
+try{
+for(let i of object){
+        console.log(i)    
+}}
+catch{
+    console.log("não foi possivel");
+}
+
+
+let yes = document.getElementById('gameyes')
+let no = document.getElementById("gameno")
+let response = document.getElementById("gameresponse")
+let preresponse = document.getElementById("prenumberfill")
+let onoff = true
+yes.onclick = function(){
+  response.textContent = ':), Então vamos jogar, tente adivinhar um numero que eu estou pensando';
+  no.disabled = "disabled"
+  no.style.color = 'grey'
+  onoff = true
+}
+
+no.onclick = function(){
+  response.textContent ='vai toma no seu cu, vamo jogar sim, quer saber, vai ser ainda mais dificil que o normal';
+  yes.disabled = "disabled"
+  yes.style.color = 'grey'
+  preresponse.textContent = "Tente acertar um numero de 1 a 100 então otario"
+  onoff = false
+}
+
+let dobutter = 0

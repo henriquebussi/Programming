@@ -23,5 +23,6 @@ button{
 }
 
 .hetero{
-    display: none;
+    width: 1px;
+    font-size: 1px;
 }
