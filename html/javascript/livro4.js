@@ -228,24 +228,54 @@ catch{
 }
 
 
-let yes = document.getElementById('gameyes')
-let no = document.getElementById("gameno")
-let response = document.getElementById("gameresponse")
-let preresponse = document.getElementById("prenumberfill")
-let onoff = true
-yes.onclick = function(){
-  response.textContent = ':), Então vamos jogar, tente adivinhar um numero que eu estou pensando';
-  no.disabled = "disabled"
-  no.style.color = 'grey'
-  onoff = true
+let yes = document.getElementById('gameyes');
+let no = document.getElementById("gameno");
+let response = document.getElementById("gameresponse");
+let preresponse = document.getElementById("prenumberfill");
+let tenBtn = document.getElementById("totenBtn");
+let result = document.getElementById("result");
+let fill = document.getElementById("numberfill");
+let onoff = true;
+let loopresult = 1;
+let i = 0;
+
+function resultonclick(random) {
+    let checkCondition = function() {
+        if (i < loopresult) {
+            tenBtn.onclick = function() {
+                let value = fill.value;
+                if (random == value) {
+                    result.textContent = "Parabéns, tu acertou";
+                    i = 1; // Update the loop condition
+                } else {
+                    result.textContent = "Errou!";
+                }
+            };
+
+            // Request the next animation frame to continue checking the condition
+            requestAnimationFrame(checkCondition);
+        }
+    };
+
+    // Start checking the condition
+    checkCondition();
 }
 
-no.onclick = function(){
-  response.textContent ='vai toma no seu cu, vamo jogar sim, quer saber, vai ser ainda mais dificil que o normal';
-  yes.disabled = "disabled"
-  yes.style.color = 'grey'
-  preresponse.textContent = "Tente acertar um numero de 1 a 100 então otario"
-  onoff = false
-}
+yes.onclick = function() {
+    response.textContent = ':), Então vamos jogar, tente adivinhar um número que eu estou pensando';
+    no.disabled = true;
+    no.style.color = 'grey';
+    onoff = true;
+    let random = Math.floor(Math.random() * 10);
+    resultonclick(random);
+};
 
-let dobutter = 0
+no.onclick = function() {
+    response.textContent = 'vai toma no seu cu, vamo jogar sim, quer saber, vai ser ainda mais dificil que o normal';
+    yes.disabled = true;
+    yes.style.color = 'grey';
+    preresponse.textContent = "Tente acertar um número de 1 a 100 então otário";
+    onoff = false;
+    let random = Math.floor(Math.random() * 100);
+    resultonclick(random);
+};
