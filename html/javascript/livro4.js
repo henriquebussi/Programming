@@ -252,12 +252,10 @@ function resultonclick(random) {
                 }
             };
 
-            // Request the next animation frame to continue checking the condition
             requestAnimationFrame(checkCondition);
         }
     };
 
-    // Start checking the condition
     checkCondition();
 }
 
@@ -267,6 +265,7 @@ yes.onclick = function() {
     no.style.color = 'grey';
     onoff = true;
     let random = Math.floor(Math.random() * 10);
+    console.log(random);
     resultonclick(random);
 };
 
@@ -277,5 +276,20 @@ no.onclick = function() {
     preresponse.textContent = "Tente acertar um número de 1 a 100 então otário";
     onoff = false;
     let random = Math.floor(Math.random() * 100);
+    console.log(random);
     resultonclick(random);
 };
+
+let one = 1
+do{
+  console.log("numero", one);
+  one++
+} while(one <= 10)
+
+// var true1 = true
+// while (true1 == true){
+//   one++
+//   if(one++ == 10){
+//     true1 == false        
+//   }
+// }
