@@ -286,10 +286,10 @@ do{
   one++
 } while(one <= 10)
 
-// var true1 = true
-// while (true1 == true){
-//   one++
-//   if(one++ == 10){
-//     true1 == false        
-//   }
-// }
+var true1 = true
+while (true1 == true){
+  one++
+  if(one++ == 10){
+    true1 == false        
+  }
+}
