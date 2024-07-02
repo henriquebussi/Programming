@@ -1,5 +1,6 @@
 #include <iostream>
 // Biblioteca que tem muita coisa(principalmente Output and Input, std)
+// Pre prosser - Acontece antes de tudo acontecer
 
 namespace one
 {
@@ -7,6 +8,7 @@ namespace one
     int age = 1;
 }
 
+// Tudo é função
 int helloworld()
 {
     /*
@@ -31,8 +33,8 @@ cout - C-out, character output ou Output de Characteres
     // BASIC MATH
     const double DESCONTO = 0.10; // const - não pode ser mais modificada, "read-only"
     int price = 50;
-    double finalprice = price - price * DESCONTO;
-    std::cout << finalprice << " reais" << '\n';
+    double finalprice = price - (price * DESCONTO);
+    std::cout << finalprice << " reais" << '\n'; // 45 reais
 
     // NAMESPACE
     std::cout << age << '\n';      // 16
@@ -41,20 +43,38 @@ cout - C-out, character output ou Output de Characteres
     return 0; // Se coloca return 0 para saber se o codigo esta dando certo, se não estiver seria "1"
 }
 
-int garbage()
+void basicmath(int a, int b)
 {
-    // Garbage - Feito para funções que não realmente fazem falta / tem melhores
-    std::cout << "Lixo Eletronico";
+    // a = a + b;
+    // a+= 1
+    // a++;
 
-    // colocar forac de garbage -
+    std::cout << "adição: " << a + b << '\n';
 
-    // typedef std::string string; //typedef - faz um "tipo" de data, utilizando outros tipos, usado para encurtar codigo, melhor usar using
+    // a--;
+    // a-=b
+    // a = a - b;
 
-    return 0;
+    std::cout << "subtração: " << a - b << '\n';
+
+    // a = a * b;
+    // a *= b;
+
+    std::cout << "multiplicação: " << a * b << '\n';
+
+    // a = a / b;
+    // a /= b;
+
+    std::cout << "divisão: " << a / b << '\n';
+
+    // int restante = a % b;
+
+    std::cout << "Se dividirmos " << a << " por " << b << " teriamos " << a % b << " restantes" << '\n';
 }
 
-int teste()
+int usingthat()
 {
+    // Using
     using namespace one; // using namespace - coloca como padrão as variaveis do namespace one
     using std::cout;     // using std::count - coloca como padrão o std::cout, assim, podendo diminuir codigo
     using string = std::string;
@@ -65,41 +85,72 @@ int teste()
 
     cout << name << '\n';
 
+    // Type Conversion
+
+    int totalquestao = 50;
+    int certaquestao = 37;
+
+    std::cout << totalquestao / certaquestao << '\n';
+
+    int valororiginal = 10000;
+    double juros = 0.05;
+    std::cout << valororiginal + ((double)valororiginal * juros * 12) << "Valor Total com Juros" << '\n'; // 16000
+
     return 0;
 }
 
+int prompt()
+{
 
-void basicmath(int a, int b){
-        // a = a + b;
-        // a+= 1
-        // a++;
+    std::cout << '\n'
+              << "Enter" << '\n';
 
-        std::cout << "adição: " << a + b << '\n';
+    std::string prompt;
+    std::getline(std::cin >> std::ws, prompt); // cin >> - character input
+    // getline - aprova espaços em branco
+    std::cout << "hello world " << prompt << '\n';
 
-        // a--;
-        // a-=b
-        // a = a - b;
+    int age;
+    std::cout << "Quantos Anos? " << '\n';
+    std::cin >> age;
+    if (age < 18)
+    {
+        std::cout << "Menor de Idade";
+    }
+    else
+    {
+        std::cout << "Maior de Idade";
+    }
 
-        std::cout << "subtração: " << a - b << '\n';
-
-        // a = a * b;
-        // a *= b;
-
-        std::cout << "multiplicação: " << a * b << '\n';
-
-        // a = a / b;
-        // a /= b;
-
-        std::cout << "divisão: " << a / b << '\n';
-
-        // int restante = a % b;
-
-    std::cout << "Se dividirmos "<< a << " por " << b << " teriamos " << a % b << " restantes" << '\n';
+    return 0;
 }
-// int main() - é a função principal do codigo,é nescessaria para o codigo rodar, e é o "esqueleto" do codigo
+
+int garbage()
+{
+    // Garbage - Feito para funções que não realmente fazem falta / tem melhores
+    std::cout << "Lixo Eletronico";
+
+    // colocar fora de garbage -
+
+    // typedef std::string string; //typedef - faz um "tipo" de data, utilizando outros tipos, usado para encurtar codigo, melhor usar using
+
+    return 0;
+}
+
+void log(const char *message);
+
+static int multiply(int a, int b)
+{
+    log("multiply");
+    return a * b;
+}
+
 int main()
 {
+    // int main() - é a função principal do codigo,é nescessaria para o codigo rodar, e é o "esqueleto" do codigo
+
     helloworld();
     // basicmath(10, 2);
-    // teste();
+    // usingthat();
+    // prompt();
 }
