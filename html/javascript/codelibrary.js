@@ -81,6 +81,7 @@ console.log("a divisão é: ", 10 / 2); // Divisão
 console.log("A Potenciação é:", 10 ** 2); // Potenciação
 console.log("A Raiz é:", 10 % 2); // Raiz
 
+
 console.log(espaco);
 
 // Ordem Matematica
@@ -97,22 +98,22 @@ console.log(espaco);
 
 // Array / Listas
 
-const japa = ["feio", "chines", "Inteligente"]; // Isso é uma Array / Lista
+const array = ["feio", "chines", "Inteligente", 1, 2]; // Isso é uma Array / Lista
 
-console.log(japa);
-console.log(japa.length); // .length diz quantos itens tem na Array
-console.log(japa[2]); // Colocando [] depois da Array, conseguimos ver um item epecifico na Array
-console.log(japa.push("corno")); // .push coloca um item no final de uma lista
+console.log(array);
+console.log(array.length); // .length diz quantos itens tem na Array
+console.log(array[2]); // Colocando [] depois da Array, conseguimos ver um item epecifico na Array
+console.log(array.push("corno")); // .push coloca um item no final de uma lista
 
-japa.pop;
-console.log(japa.pop); // .pop remove o ultimo item de uma array
-console.log(japa.reverse); //
-console.log(japa.splice);
+array.pop;
+console.log(array.pop); // .pop remove o ultimo item de uma array
+console.log(array.reverse); //
+console.log(array.splice);
 
 console.log(espaco);
 
 // for
-for (let i of japa) {
+for (let i of array) {
   // of
   console.log(i);
 }
@@ -123,3 +124,7 @@ function portão(gate) {
 }
 
 portão("Shadowheart best waifu");
+
+console.log(1 == "1");
+console.log(1 === "1");
+

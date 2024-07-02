@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/livro4.css" />
+    <link rel="stylesheet" href="../css/../css/livro4.css" />
 </head>
 <body>
 <div>
@@ -30,13 +30,78 @@
     </div>
     <br>
 
+
     <div id="text1"></div>
     <div id="text2"></div>
     <div id="text3"></div>
 
-    <div id="chest"></div>
-</div>
+      <div id="chest"></div>
 
-<script src="../javascript/livro4.js"></script>
-</body>
+      <div>
+        <button id="RandomBtn">Numero aleatorio</button>
+        <div id="RandomNumber"></div> 
+      </div> <br>
+
+        <div>
+          <span style="display: flex;">Voce quer acessar o <div style="color: orange; margin-left: 1px;"> Pron</div> <div style="color: red;">Vidros</div>? </span>
+          <input type="text" id="manyears" placeholder="Ce tem quantos anos?">
+          <button id="yearsubmit">-</button>
+          <div id="textyears"></div>
+        </div> <br>
+
+        <div>
+          <div>Voce é:</div>
+            <input type="checkbox" id="Homosexual">
+            <label for="Homosexual">Homosexual</label>
+
+            <input type="radio" id="gay">
+            <label for="gay">Gay</label>
+
+            <input type="radio" id="Dar">
+            <label for="Dar">Gosta de Dar</label>
+
+            <input type="radio" id="Viado">
+            <label for="Viado">Viado</label>
+
+            <input type="radio" id="none" class="hetero">
+            <label for="none" class="hetero">Hetero</label>
+
+            <button id="who">Oque voce é?</button>
+
+            <div id="resultado"></div>
+        </div> <br>
+
+        <div>
+          <input type="radio" id="ternary">
+          <label for="ternary">Tarnery</label>
+          <div id="ternaryresult"></div>
+          <button id="TarnaryBtn">Tarnary?</button>
+
+
+          <input type="text" placeholder="diga um numero 1 a 10" id="onetoten">
+          <button id="onetotenBtn">Submit</button>
+          <div id="onetotenresult"></div>
+          <input type="number" placeholder="digite um numero" id="typenumber">
+          <button id="typenumberBtn">Submit</button>
+
+
+          <div>Ta, isso ta ficando chato, quer jogar um jogo?</div>
+          <button id="gameyes">sim</button>
+          <button id="gameno">não</button>
+          <div id="gameresponse"></div>
+          
+          <div>
+            <div id="prenumberfill"></div>
+            <input type="number" placeholder="Digite um numero" id="numberfill">
+            <button id="totenBtn">Submit</button>
+            <div id="result"></div>
+          </div>
+        </div>
+
+
+
+  
+    </div>
+  </body>
+  <script src="../javascript/livro4.js"></script>
 </html>

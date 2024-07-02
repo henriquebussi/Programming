@@ -1,6 +1,28 @@
-:root{
-    --clr-font: ;
+*{
+    color: white;
 }
 
-#myH1{
+body{
+    background-color: rgb(59, 22, 95);
+}
+h1{
+    color: turquoise;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input{
+    color: rgb(51, 72, 65);
+}
+
+button{
+    color: black;
+}
+
+#text{
+    color: red
+}
+
+.hetero{
+    width: 1px;
+    font-size: 1px;
 }
