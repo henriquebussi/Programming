@@ -21,10 +21,10 @@ cout - C-out, character output ou Output de Characteres
     std::cout << "Vai se foder c++" << '\n';
 
     // VARIABLES
-    int age = 16;                  // int - variavel de inteiros (Z)
+    int age = 16;                  // int - variavel de numero (4 bites)
     double pi = 3.14;              // double - variavel dos Racionais (R)
     char initial = 'H';            // char - apenas um character
-    bool power = true;             // boolean - True/False
+    bool power = true;             // boolean - True/False (1 bit)
     std::string name = "Henrique"; // std::string - Texto
 
     std::cout << age << " anos" << '\n';
@@ -137,20 +137,28 @@ int garbage()
     return 0;
 }
 
-void log(const char *message);
+// void log(const char *message);
 
-static int multiply(int a, int b)
+// static int multiply(int a, int b)
+// {
+//     log("multiply");
+//     return a * b;
+// }
+
+
+int cherno()
 {
-    log("multiply");
-    return a * b;
+    std::cout << std::endl << sizeof(double) << std::endl;
+    std::cin.get();
 }
 
 int main()
 {
     // int main() - é a função principal do codigo,é nescessaria para o codigo rodar, e é o "esqueleto" do codigo
 
-    helloworld();
+    // helloworld();
     // basicmath(10, 2);
     // usingthat();
     // prompt();
+    cherno();
 }
